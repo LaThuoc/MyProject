@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ body {
 
 .container {
     max-width: 900px;
-    min-height:auto;
+    min-height: auto;
     margin: 30px auto;
     padding: 15px;
     background: #fff;
@@ -46,7 +47,6 @@ body {
     width: 100%;
     max-width: 450px;
     max-height: 480px;
-
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -91,6 +91,7 @@ body {
     background: #f1f1f1;
     border-radius: 5px;
 }
+
 label {
     font-weight: 600;
     display: block;
@@ -113,14 +114,42 @@ label {
     cursor: pointer;
 }
 
-.quantity-input {
-    width: 60px;
-    text-align: center;
-    font-size: 14px;
-    padding: 5px;
+.quantity-selector {
+    display: flex;
+    align-items: center;
     border-radius: 5px;
-    border: 1px solid #ddd;
+    overflow: hidden;
+    width: 120px;
+    height: 30px;
+    justify-content: space-between;
+    padding: 5px;
 }
+
+.qty-btn {
+    background: #f0f0f0;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* .qty-btn:hover {
+    background: #ddd;
+} */
+
+.qty-input {
+    text-align: center;
+    width: 40px;
+    border: none;
+    /* background: white; */
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Buy Button */
 .btn-buy {
     background: #e63946;
     color: white;
@@ -138,7 +167,8 @@ label {
 .btn-buy:hover {
     background: #c5303d;
 }
-.btn-buy i{
+
+.btn-buy i {
     margin-right: 10px;
     font-size: 25px;
 }
@@ -151,14 +181,14 @@ nav {
     width: 100%;
     z-index: 1000;
 }
-.containerr{
+
+.containerr {
     background-color: #111827;
 }
-.bg-blue-500{
+
+.bg-blue-500 {
     margin-bottom: 12px;
 }
-
-
 
 
 

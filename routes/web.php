@@ -7,20 +7,9 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CartController;
+use App\Http\Controllers\SearchController;
 
 
-
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
 
 Route::get('/', function () {
     return view('welcome');
@@ -60,7 +49,17 @@ Route::middleware(['auth', 'user-access:admin'])->group(function () {
 
 Route::get('/products', [ProductController::class, 'userIndex'])->name('products.index');
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
-Route::post('/cart/add/{id}', [CartController::class, 'addToCart'])->name('cart.add');
 Route::get('/product/{id}', [ProductController::class, 'detail'])->name('product.detail');
+
+
+
+Route::post('/cart/add/{id}', [CartController::class, 'addToCart'])->name('cart.add');
+Route::post('/cart/update/{id}', [CartController::class, 'update'])->name('cart.update');
+Route::post('/cart/remove/{id}', [CartController::class, 'remove'])->name('cart.remove');
+Route::post('/cart/clear', [CartController::class, 'clear'])->name('cart.clear');
+Route::get('/checkout', [CartController::class, 'checkout'])->name('checkout');
+Route::get('/cart/data', [CartController::class, 'getCart'])->name('cart.data');
+
+Route::get('/search', [SearchController::class, 'search'])->name('search');
 
 
