@@ -1,65 +1,38 @@
-# SportX-Trang web bán hàng thể thao
+#ỨNG DỤNG THƯƠNG MẠI ĐIỆN TỬ SPORTX - BÁN HÀNG THỂ THAO
+##1. Giới Thiệu
+La Tiến Thược - 22010150
 
-## 1. Giới Thiệu
-SportX là một trang web bán hàng thể thao trực tuyến được xây dựng bằng Laravel và Bootstrap. Mục đích của dự án là cung cấp một nền tảng mà người dùng có thể mua hàng thể thao một cách dễ dàng và thuận tiện.
+Mục tiêu:
+SportX là một ứng dụng thương mại điện tử chuyên bán các sản phẩm thể thao, bao gồm giày, quần áo, phụ kiện và dụng cụ tập luyện. Website giúp người dùng dễ dàng tìm kiếm sản phẩm phù hợp, cung cấp đầy đủ thông tin chi tiết và mang đến trải nghiệm mua sắm tiện lợi, nhanh chóng.
 
-## 2. Tính Năng
-### 2.1. Dành cho khách hàng
-- Xem danh sách sản phảm
-- Xem chi tiết sản phẩm (tên, giá, hình ảnh).
+Phạm vi:
+Người dùng:
+Truy cập trang chủ, xem danh sách sản phẩm, xem chi tiết sản phẩm, tìm kiếm sản phẩm, thêm sản phẩm vào giỏ hàng và đặt hàng.
+Quản trị viên:
+Quản lý sản phẩm, danh mục sản phẩm, đơn hàng và theo dõi thống kê thông qua dashboard quản trị.
+##2. Tính Năng Chính
+Trang Chủ: Giới thiệu ứng dụng và hiển thị sản phẩm nổi bật.
+Danh Sách & Chi Tiết Sản Phẩm: Xem danh sách sản phẩm và chi tiết từng sản phẩm.
+Tìm Kiếm Sản Phẩm: Cho phép tìm kiếm theo tên, danh mục hoặc thương hiệu.
+Giỏ Hàng & Đặt Hàng: Thêm sản phẩm vào giỏ, cập nhật số lượng và thanh toán đơn hàng.
+Xác Thực Người Dùng: Đăng ký, đăng nhập và quản lý tài khoản cá nhân.
+Quản Lý Admin:
+Dashboard quản trị để quản lý sản phẩm, danh mục, đơn hàng và theo dõi doanh số bán hàng.
+#3. Sơ Đồ Cấu Trúc & Chức Năng
+Hình ảnh minh họa sơ đồ cấu trúc và chức năng của ứng dụng, bao gồm:
+![mermaid-ai-diagram-2025-03-06-051454](https://github.com/user-attachments/assets/4d7979ec-4758-448b-b16e-4c825f1f28b7)
+![mermaid-ai-diagram-2025-03-06-051201](https://github.com/user-attachments/assets/142794c5-dd52-4483-b6c3-54fae24dbc14)
+![mermaid-ai-diagram-2025-03-06-051827](https://github.com/user-attachments/assets/238f1dfd-97d4-4998-a2c0-4d90d1cd1ed2)
+##4. Sơ Đồ Thuật Toán / Sơ Đồ Tuần Tự
+![mermaid-ai-diagram-2025-03-06-044056](https://github.com/user-attachments/assets/b24af279-b82a-471d-b852-a65aaf45640d)
+5. Công Nghệ Sử Dụng
+Laravel 11: Framework PHP mạnh mẽ cho phát triển ứng dụng web.
+
+Link github: https://github.com/LaThuoc/MyProject
 
 
-### 2.2. Dành cho Quản Trị Viên
-- Quản lý sách:
- + Thêm sản phẩm vào trang chủ
- + Chỉnh sửa thông tin sách
- + Xóa sản phẩm khỏi trang chủ
-- Quản lý danh mục sản phẩm.
+*Tài khoản mật khẩu cho admin: admin@gmail.com / 123456789
+*Tài khoản mật khẩu cho user: latienthuoc@gmail.com / 123456789
 
-## 3. Cài Đặt & Chạy Dự Án
-### 3.1. Clone Repository
-```bash
-git clone 
-cd MyProject https://github.com/LaThuoc/MyProject
-```
 
-### 3.2. Cài Đặt Package
-```bash
-composer install
-npm install
-```
-
-### 3.3. Cấu Hình Môi Trường
-- Sao chép file `.env.example` thành `.env`.
-- Thiết lập cấu hình database trong file `.env`.
-
-### 3.4. Tạo Database
-```bash
-php artisan migrate --seed
-```
-
-### 3.5. Chạy Dự Án
-```bash
-php artisan serve
-```
-
-## 4. Công Nghệ Sử Dụng
-- **Backend:** Laravel 10 (PHP)
-- **Frontend:** Bootstrap 5, Blade Template
-- **Database:** MySQL
-- **Hỗ Trợ:** Vite, Laravel UI
-
-## 5. Hướng Dẫn Sử Dụng
-- **Người dùng mới:** Đăng ký tài khoản và bắt đầu mua sách.
-- **Quản trị viên:** Quản lý sách và đơn hàng.
-    + Tài khoản quản trị viên: admin@gmail.com
-    + Mật khẩu: 123456789
-
-## 6. Tính Năng Dự Kiến Nâng Cấp
-- **Thanh toán online**: Tích hợp VNPay, PayPal.
-- **Tìm kiếm nâng cao**: Tìm kiếm theo tên sản phẩm, danh mục.
-- **Hệ thống review**: Cho phép người dùng đánh giá sản phẩm.
-
-## 7. Liên Hệ
-- **GitHub:** [LaThuoc](https://github.com/LaThuoc)
 
